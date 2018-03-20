@@ -23,10 +23,9 @@ GameObject:
   - component: {fileID: 23901836348135962}
   - component: {fileID: 65354348284046020}
   - component: {fileID: 54640210150567340}
-  - component: {fileID: 114826633981374582}
   m_Layer: 0
   m_Name: Toast
-  m_TagString: Untagged
+  m_TagString: grain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39,7 +38,7 @@ Transform:
   m_GameObject: {fileID: 1576197015177938}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 9, y: 9, z: 9}
+  m_LocalScale: {x: 13, y: 13, z: 13}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -112,16 +111,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.08776184, y: 0.10567192, z: 0.0196517}
   m_Center: {x: 0, y: 0, z: 0.000000009778887}
---- !u!114 &114826633981374582
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1576197015177938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51fe4e56dfba49b45af1cc7e974e7335, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fruitSlicedPrefab: {fileID: 1576197015177938}
-  startForce: 15

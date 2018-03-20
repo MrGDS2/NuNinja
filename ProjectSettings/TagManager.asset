@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - swipe
+  - protein
+  - fruit
+  - oils
+  - dairy
+  - veggie
+  - grain
   layers:
   - Default
   - TransparentFX

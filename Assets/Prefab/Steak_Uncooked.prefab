@@ -23,10 +23,9 @@ GameObject:
   - component: {fileID: 23496121377435508}
   - component: {fileID: 54333502744769430}
   - component: {fileID: 65318426318857044}
-  - component: {fileID: 114106215012416508}
   m_Layer: 0
   m_Name: Steak_Uncooked
-  m_TagString: Untagged
+  m_TagString: protein
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,16 +111,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1229193, y: 0.01683254, z: 0.07127509}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114106215012416508
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1768177514289278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51fe4e56dfba49b45af1cc7e974e7335, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fruitSlicedPrefab: {fileID: 0}
-  startForce: 15
