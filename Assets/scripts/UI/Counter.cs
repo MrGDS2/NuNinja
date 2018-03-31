@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 public class Counter : MonoBehaviour {
-	public Text UI;
+	public Text UI,UII;
 
 	public Text score;
 	//public Text countg;
@@ -16,13 +16,14 @@ public class Counter : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+		
 
 
-		//for(int i=0;i<UI.Length;i++)
-		UI.text = Food.instance.Counting ().ToString ();
 
-		if(!UI.text.Equals("0"))
-			score.text ="Score: " + (Food.instance.Counting ()*100).ToString ();
-		//UI[2].text = Food.instance.Counting ().ToString ();
+		UI.text =(Food.instance.f["grain"]).ToString();
+		UII.text =  "4";
+	//	if(!UI.text.Equals("0"))
+ // 	score.text ="Score: " + (Food.instance.Counting ()*100).ToString ();
+		
 	}
 }

@@ -164,7 +164,6 @@ MonoBehaviour:
   fruitSlicedPrefab: {fileID: 1761492085005052, guid: e533b0233803e8749aad92b125b0e4d9,
     type: 2}
   startForce: 15
-  one: {fileID: 0}
 --- !u!135 &135712065620500352
 SphereCollider:
   m_ObjectHideFlags: 1
