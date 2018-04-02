@@ -25,7 +25,7 @@ public class Food : MonoBehaviour {
 		rig = GetComponent<Rigidbody2D>();
 		rig.AddForce (transform.up * startForce, ForceMode2D.Impulse);
 		f = new Hashtable ();
-		has
+
 //
 
 	}
