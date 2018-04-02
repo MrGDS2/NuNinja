@@ -16,11 +16,12 @@ public class Counter : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		
 
 
 
-		UI.text =(Food.instance.f["grain"]).ToString();
+
+        UI.text = "2";
+            //(Food.instance.Countfruit
 		UII.text =  "4";
 	//	if(!UI.text.Equals("0"))
  // 	score.text ="Score: " + (Food.instance.Counting ()*100).ToString ();

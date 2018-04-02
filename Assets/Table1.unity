@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44868213, g: 0.4288073, b: 0.43738914, a: 1}
+  m_IndirectSpecularColor: {r: 0.44868398, g: 0.42871508, b: 0.43741226, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.57254905, g: 1, b: 0, a: 1}
+  m_Color: {r: 0.007098733, g: 0.007352948, b: 0.006758224, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.57254905, g: 1, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.022058845, g: 0.022221042, b: 0.022221042, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1028,7 +1028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1329,7 +1329,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0.04411763, g: 0.043144446, b: 0.043144446, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1552,17 +1552,17 @@ Prefab:
     - target: {fileID: 114107740174638506, guid: 01b6984d56007834e9d0fe5ae7cac42e,
         type: 2}
       propertyPath: m_Color.r
-      value: 0.17365919
+      value: 0.060121104
       objectReference: {fileID: 0}
     - target: {fileID: 114107740174638506, guid: 01b6984d56007834e9d0fe5ae7cac42e,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.53676474
+      value: 0.058823526
       objectReference: {fileID: 0}
     - target: {fileID: 114107740174638506, guid: 01b6984d56007834e9d0fe5ae7cac42e,
         type: 2}
       propertyPath: m_Color.b
-      value: 0.2362636
+      value: 0.05989738
       objectReference: {fileID: 0}
     - target: {fileID: 224580456877183624, guid: 01b6984d56007834e9d0fe5ae7cac42e,
         type: 2}

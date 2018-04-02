@@ -12,9 +12,10 @@ public class Food : MonoBehaviour {
 	int count=0;
 	public static Food instance;
 
-	public 	Hashtable f;
-	//int[] foods;
-	Rigidbody2D rig;
+    //public Dictionary<string, int> d;
+    //int[] foods;
+  public  List<string> fruit;
+    Rigidbody2D rig;
 
 
 	void Start ()
@@ -24,14 +25,16 @@ public class Food : MonoBehaviour {
 
 		rig = GetComponent<Rigidbody2D>();
 		rig.AddForce (transform.up * startForce, ForceMode2D.Impulse);
-		f = new Hashtable ();
+        //  d= new Dictionary<string, int>() { { "grain", 0 }, { "protein", 0} };
+       
+
 
 //
 
 	}
 	void Update()
 	{
-
+     // Debug.Log(  Countfruit(fruit));
 	}
 
 
@@ -48,22 +51,9 @@ public class Food : MonoBehaviour {
 			GameObject slicedFruit = Instantiate(fruitSlicedPrefab, transform.position, rotation);
 
 			Debug.Log (slicedFruit.tag + " hit");
-
-			f.Add (slicedFruit.tag, count);
-			count = g++;
-//			f [slicedFruit.tag] = count;
-
-
-//			switch(slicedFruit.tag)
-//			{
-//			case "grain":
-//				f ["grain"] = Counting ();
-//				break;
-//
-////			case "veggie":
-////				f ["veggie"] = Counting ();
-////				break;
-//			}
+           
+            fruit.Add(slicedFruit.tag);
+            Countfruit(fruit);
 			Destroy(slicedFruit, 1f);
 
 			Destroy(gameObject);
@@ -80,21 +70,41 @@ public class Food : MonoBehaviour {
 
 
 	}
+    public Dictionary<string, int> Countfruit(IList<string> stuffList)
+    {
+        Dictionary<string, int> Count = new Dictionary<string, int>();
+
+        foreach (string stuff in stuffList)
+        {
+            //initialize or increment the count for this item
+            if (Count.ContainsKey(stuff))
+            {
+                Count[stuff]++;
+            }
+            else
+            {
+               Count.Add(stuff, 1);
+            }
+        }
 
 
-	public void show()
+    
+
+        return Count;
+    }
+
+    public void show()
 	{
+     /**   ICollection key = Count.Keys; //get collection of keys
 
-		ICollection key = f.Keys; //get collection of keys
+        foreach (string k in key)
+        {
+            ///
+            Debug.Log(k + ":" + Count[k]);
 
-		foreach (string k in key)
-		{
-			///
-			Debug.Log(k + ":" + f[k]);
-
-		}
-
-	}
+        }
+    **/
+    }
 
 	public int Counting()
 	{
