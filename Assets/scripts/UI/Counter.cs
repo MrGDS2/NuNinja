@@ -20,9 +20,9 @@ public class Counter : MonoBehaviour {
 
 
 
-        UI.text = "2";
+		UI.text =(Food.instance.fruit[0]).ToString();;
             //(Food.instance.Countfruit
-		UII.text =  "4";
+		UII.text =  (Food.instance.fruit[1]).ToString();
 	//	if(!UI.text.Equals("0"))
  // 	score.text ="Score: " + (Food.instance.Counting ()*100).ToString ();
 		

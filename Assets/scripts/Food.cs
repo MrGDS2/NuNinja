@@ -9,12 +9,12 @@ public class Food : MonoBehaviour {
 	public float startForce = 15f;
 
 	public static int g=0;
-	int count=0;
+	public int count=0;
 	public static Food instance;
-
+	public int[] fruit;
     //public Dictionary<string, int> d;
     //int[] foods;
-  public  List<string> fruit;
+
     Rigidbody2D rig;
 
 
@@ -27,6 +27,17 @@ public class Food : MonoBehaviour {
 		rig.AddForce (transform.up * startForce, ForceMode2D.Impulse);
         //  d= new Dictionary<string, int>() { { "grain", 0 }, { "protein", 0} };
        
+		fruit = new int[6];
+
+
+
+		for(int i=0;i<fruit.Length;i++)
+		{
+
+			fruit [i] = count;
+
+		}
+
 
 
 //
@@ -51,13 +62,35 @@ public class Food : MonoBehaviour {
 			GameObject slicedFruit = Instantiate(fruitSlicedPrefab, transform.position, rotation);
 
 			Debug.Log (slicedFruit.tag + " hit");
-           
-            fruit.Add(slicedFruit.tag);
-            Countfruit(fruit);
+
+
+			switch (slicedFruit.tag) 
+			{
+
+			case  "grain":
+				
+				fruit [0] =Counting();
+
+				break;
+
+			case  "protein":
+				
+				fruit [1] =Counting();
+
+				break;
+
+
+
+
+
+
+			}
+           // fruit.Add(slicedFruit.tag);
+          //  Countfruit(fruit);
 			Destroy(slicedFruit, 1f);
 
 			Destroy(gameObject);
-			show ();
+
 
 
 		}
@@ -70,40 +103,36 @@ public class Food : MonoBehaviour {
 
 
 	}
-    public Dictionary<string, int> Countfruit(IList<string> stuffList)
-    {
-        Dictionary<string, int> Count = new Dictionary<string, int>();
-
-        foreach (string stuff in stuffList)
-        {
-            //initialize or increment the count for this item
-            if (Count.ContainsKey(stuff))
-            {
-                Count[stuff]++;
-            }
-            else
-            {
-               Count.Add(stuff, 1);
-            }
-        }
-
-
-    
-
-        return Count;
-    }
+//    public Dictionary<string, int> Countfruit(IList<string> stuffList)
+//    {
+//        Dictionary<string, int> Count = new Dictionary<string, int>();
+//
+//        foreach (string stuff in stuffList)
+//        {
+//            //initialize or increment the count for this item
+//            if (Count.ContainsKey(stuff))
+//            {
+//                Count[stuff]++;
+//            }
+//            else
+//            {
+//               Count.Add(stuff, 1);
+//            }
+//        }
+//
+//
+//    
+//
+//        return Count;
+//    }
 
     public void show()
 	{
-     /**   ICollection key = Count.Keys; //get collection of keys
+		foreach(int f in fruit)
+		{
 
-        foreach (string k in key)
-        {
-            ///
-            Debug.Log(k + ":" + Count[k]);
-
-        }
-    **/
+			print (f);
+		}
     }
 
 	public int Counting()
