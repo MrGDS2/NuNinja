@@ -1,20 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Food : MonoBehaviour {
 
 	public GameObject fruitSlicedPrefab;
 	public float startForce = 15f;
-
+    Counter cntr = new Counter();
 	public static int g=0;
-	public int count=0;
+    public static int count3 = 0;
+    public int count = 0;
 	public static Food instance;
 	public int[] fruit;
     //public Dictionary<string, int> d;
     //int[] foods;
-
     Rigidbody2D rig;
 
 
@@ -61,25 +62,49 @@ public class Food : MonoBehaviour {
 
 			GameObject slicedFruit = Instantiate(fruitSlicedPrefab, transform.position, rotation);
 
-			Debug.Log (slicedFruit.tag + " hit");
-
+			
 
 			switch (slicedFruit.tag) 
 			{
 
 			case  "grain":
-				
-				fruit [0] =Counting();
-
+                    Counter.type = "grain";
+                    Counter.amount += 1;
+                    Counter.gAmount += 1;
+                    //fruit[0] = Counting();
 				break;
 
 			case  "protein":
-				
-				fruit [1] =Counting();
+                    Counter.type = "protein";
+                    Counter.amount += 1;
+                    Counter.pAmount += 1;
+				//fruit [1] =Counting();
+                    break;
+            case "dairy":
+                Counter.type = "dairy";
+                Counter.amount += 1;
+                    Counter.dAmount += 1;
+                //fruit[1] = Counting();
+                    break;
+            case "fruit":
+                Counter.type = "fruit";
+                Counter.amount += 1;
+                    Counter.fAmount += 1;
+                //fruit[1] = Counting();
+                    break;
+            case "oils":
+                Counter.type = "oils";
+                Counter.amount += 1;
+                    Counter.oAmount += 1;
+                    //fruit[1] = Counting();
 
 				break;
-
-
+                case "veggie":
+                    Counter.type = "veggie";
+                Counter.amount += 1;
+                Counter.vAmount += 1;
+                //fruit[0] = Counting();
+                break;
 
 
 
@@ -137,13 +162,13 @@ public class Food : MonoBehaviour {
 
 	public int Counting()
 	{
-		
 
 		count = g++;
 		return count;
 
 	
 	}
+
 
 
 
