@@ -9,7 +9,7 @@ public class EnterName : MonoBehaviour {
 	public void GetInput(string name)
 	{  print ("You Entered" + name);
 		input.text = "";
-
+		PlayerPrefs.SetString ("usrName", name);
 	}
 
 

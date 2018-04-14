@@ -128,28 +128,7 @@ public class Food : MonoBehaviour {
 
 
 	}
-//    public Dictionary<string, int> Countfruit(IList<string> stuffList)
-//    {
-//        Dictionary<string, int> Count = new Dictionary<string, int>();
-//
-//        foreach (string stuff in stuffList)
-//        {
-//            //initialize or increment the count for this item
-//            if (Count.ContainsKey(stuff))
-//            {
-//                Count[stuff]++;
-//            }
-//            else
-//            {
-//               Count.Add(stuff, 1);
-//            }
-//        }
-//
-//
-//    
-//
-//        return Count;
-//    }
+
 
     public void show()
 	{

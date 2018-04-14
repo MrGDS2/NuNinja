@@ -503,7 +503,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 0.534, b: 1, a: 1}
+    m_NormalColor: {r: 0.9632353, g: 0.43203938, b: 0.9632353, a: 1}
     m_HighlightedColor: {r: 0.32156864, g: 0.31764707, b: 0.31764707, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -569,7 +569,6 @@ GameObject:
   - component: {fileID: 1430298360}
   - component: {fileID: 1430298359}
   - component: {fileID: 1430298358}
-  - component: {fileID: 1430298357}
   m_Layer: 0
   m_Name: empty
   m_TagString: Untagged
@@ -577,18 +576,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1430298357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1430298356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90cb56e5c44ece34fadb0a05d85f97c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  input: {fileID: 0}
 --- !u!23 &1430298358
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -741,6 +728,7 @@ GameObject:
   - component: {fileID: 1548790913}
   - component: {fileID: 1548790915}
   - component: {fileID: 1548790914}
+  - component: {fileID: 1548790916}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -764,7 +752,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 29.11766, y: 23}
-  m_SizeDelta: {x: 500, y: 100}
+  m_SizeDelta: {x: 500, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1548790914
 MonoBehaviour:
@@ -778,7 +766,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -805,6 +793,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1548790912}
+--- !u!114 &1548790916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1548790912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9c56fd7886e364a934763d7a41af77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  display: {fileID: 1548790914}
 --- !u!1 &1695007953
 GameObject:
   m_ObjectHideFlags: 0
