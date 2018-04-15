@@ -11,6 +11,10 @@ TagManager:
   - dairy
   - veggie
   - grain
+  - OverlayII
+  - OverlayIII
+  - Canvas
+  - Overlay
   layers:
   - Default
   - TransparentFX

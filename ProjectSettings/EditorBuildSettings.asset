@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Name.unity
     guid: d771cd83ab467474786162136b8c5d33
-  - enabled: 1
+  - enabled: 0
     path: Assets/Gender.unity
     guid: eec9e05062c5cb643831959c12e93866
+  - enabled: 1
+    path: Assets/Table1.unity
+    guid: ccf8befb1074fdc4aac3b4afa7a9ff51
