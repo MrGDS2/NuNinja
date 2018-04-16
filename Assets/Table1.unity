@@ -187,9 +187,10 @@ MonoBehaviour:
   Overlay: {fileID: 1717686766}
   sprite: {fileID: 290238397}
   img:
-  - {fileID: 290238397}
   - {fileID: 1912464349563538, guid: 6fea646cdd566034d9d6150760fa0a67, type: 2}
   - {fileID: 1399396692391264, guid: 8260dc117a5743148b3b88fbd6c1b742, type: 2}
+  - {fileID: 1511456398221428, guid: f1998b290506dc247b8e3595feff4571, type: 2}
+  - {fileID: 1640791568319928, guid: c4fe688a3dc04f84e9d40de6506162e6, type: 2}
 --- !u!1 &162267051
 GameObject:
   m_ObjectHideFlags: 0
@@ -558,8 +559,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 62, y: 52}
-  m_SizeDelta: {x: 612.9, y: 129.4}
+  m_AnchoredPosition: {x: 32, y: 52}
+  m_SizeDelta: {x: 700, y: 129.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &469354031
 MonoBehaviour:
@@ -583,7 +584,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 30
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 2
     m_MaxSize: 40
@@ -836,7 +837,7 @@ GameObject:
   - component: {fileID: 777966274}
   - component: {fileID: 777966273}
   m_Layer: 5
-  m_Name: Text
+  m_Name: oktext
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1945,7 +1946,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -12, y: -496}
-  m_SizeDelta: {x: 727.8, y: 435}
+  m_SizeDelta: {x: 787.76, y: 435}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1717686768
 MonoBehaviour:

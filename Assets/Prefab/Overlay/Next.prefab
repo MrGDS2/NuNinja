@@ -51,7 +51,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad334e6127a334849bb5d292f80e2246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Overlay:
-  - {fileID: 1887252152958948, guid: b41e527b7ba8f9f4d8d9f542cbd65ae2, type: 2}
-  - {fileID: 1356083269512754, guid: 6fea646cdd566034d9d6150760fa0a67, type: 2}
-  - {fileID: 1310014730090392, guid: 8260dc117a5743148b3b88fbd6c1b742, type: 2}
+  title: {fileID: 0}
+  instructions: {fileID: 0}
+  nextslide: {fileID: 0}
+  Overlay: {fileID: 0}
+  sprite: {fileID: 0}
+  img: []

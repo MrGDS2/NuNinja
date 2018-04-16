@@ -20,10 +20,10 @@ public class FlexibleUIText : FlexibleUI
     {
         base.OnSkinUI();
         text.color = flexibleUIData.textColor;
-        if (useMainFont)
-        {
-            text.font = flexibleUIData.font;
-        }
+//        if (useMainFont)
+//        {
+//            text.font = flexibleUIData.font;
+//        }
         
     }
 

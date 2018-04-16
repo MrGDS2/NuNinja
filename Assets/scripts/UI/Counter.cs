@@ -76,6 +76,7 @@ public class Counter : MonoBehaviour {
         {
             score.text = "Score: " + amount.ToString();
             oScore.text = oAmount.ToString();
+			score.color = Color.red;
             //fruit[0] = Counting();
         }
         /*switch (type)
