@@ -10,8 +10,8 @@ public class Next : MonoBehaviour {
 	public GameObject Overlay,sprite;
 	public List <GameObject> img;
 	public static int  press=0;
-	GameObject i,j,k,l;
-	int limitpress=5;
+	GameObject i,j,k,l,n;
+	int limitpress=6;
 
 	// Use this for initialization
 	void Start () {
@@ -89,9 +89,22 @@ public class Next : MonoBehaviour {
 			img.Remove (img [0]);
 			Destroy (l);
 			title.text = "watch out";
-			instructions.text = "Look out for bad carbs! Hitting the purple \ncolored ball will result in a negative score rating. Don't let it disrupt your nutritional flow!";
+			instructions.text = "Look out for bad carbs! Hitting the purple \ncolored ball will result in a negative score.\nDon't let it disrupt your nutritional flow!";
 			k =Instantiate (img[0], img[0].transform.position, img[0].transform.rotation);
 			k.transform.SetParent (GameObject.FindGameObjectWithTag ("Overlay").transform, false);
+
+			//nextslide.text = "Play!";
+			break;
+
+
+		case 5:
+			//last card view
+			img.Remove (img [0]);
+			Destroy (k);
+			title.text = "your goal";
+			instructions.text = "Focus on the GREEN balls!\nLet's get 5 to complete the fruit group";
+			n =Instantiate (img[0], img[0].transform.position, img[0].transform.rotation);
+			n.transform.SetParent (GameObject.FindGameObjectWithTag ("Overlay").transform, false);
 
 			nextslide.text = "Play!";
 			break;

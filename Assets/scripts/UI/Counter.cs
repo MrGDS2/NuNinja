@@ -19,6 +19,11 @@ public class Counter : MonoBehaviour {
     public static int dAmount = 0;
     public static int fAmount = 0;
     public static int oAmount = 0;
+
+
+
+	public static Counter instance;
+	Color goal=new Color32(0x33,0xFF,0x00,0xFF);
 	public void Start()
 	{
         score = GameObject.Find("score").GetComponent<Text>();
@@ -28,6 +33,8 @@ public class Counter : MonoBehaviour {
         veggie = GameObject.Find("veggie").GetComponent<Text>();
         dScore = GameObject.Find("dairy").GetComponent<Text>();
         oScore = GameObject.Find("oils").GetComponent<Text>();
+
+		instance = this;
 
     }
 
@@ -41,89 +48,55 @@ public class Counter : MonoBehaviour {
             type = "";
             score.text = "Score: " + amount.ToString();
             pScore.text = pAmount.ToString();
+			Colorset(goal);
         }
         else if(type == "grain"){
             Debug.Log("grain" + " hit.");
             type = "";
             score.text = "Score: " + amount.ToString();
             gScore.text = gAmount.ToString();
-            //fruit[0] = Counting();
+			Colorset(goal);
         }
         else if (type=="fruit"){
             score.text = "Score: " + amount.ToString();
             fScore.text = fAmount.ToString();
-            //fruit[0] = Counting();
+			Colorset(goal);
         }
         else if (type == "veggie")
         {
             score.text = "Score: " + amount.ToString();
             veggie.text = vAmount.ToString();
-            //fruit[0] = Counting();
+			Colorset(goal);
         }
         else if (type == "grain")
         {
             score.text = "Score: " + amount.ToString();
             gScore.text = gAmount.ToString();
-            //fruit[0] = Counting();
+			Colorset(goal);
         }
         else if (type == "dairy")
         {
             score.text = "Score: " + amount.ToString();
             dScore.text = dAmount.ToString();
-            //fruit[0] = Counting();
-        }
+			Colorset(goal);
+		   }
         else if (type == "oils")
         {
             score.text = "Score: " + amount.ToString();
             oScore.text = oAmount.ToString();
-			score.color = Color.red;
+			Colorset (Color.red);
             //fruit[0] = Counting();
         }
-        /*switch (type)
-        {
+   
 
-            case "grain":
-                type = "";
-                score.text = "Score: " + amount.ToString();
-                gScore.text = gAmount.ToString();
-                //fruit[0] = Counting();
-                break;
+	}
 
-            case "protein":
-                type = "";
-                score.text = "Score: " + amount.ToString();
-                pScore.text = pAmount.ToString();
-                //fruit[1] = Counting();
-                break;
-            case "dairy":
-                type = "";
-                score.text = "Score: " + amount.ToString();
-                dScore.text = dAmount.ToString();
-                //fruit[1] = Counting();
-                break;
-            case "fruit":
-                type = "";
-                score.text = "Score: " + amount.ToString();
-                fScore.text = fAmount.ToString();
-                //fruit[1] = Counting();
-                break;
-            case "oil":
-                type = "";
-                score.text = "Score: " + amount.ToString();
-                oScore.text = oAmount.ToString();
-                //fruit[1] = Counting();
 
-                break;
-            case "veggie":
-                Debug.Log("hello2");
-                type = "";
-                score.text = "Score: " + amount.ToString();
-                veggie.text = vAmount.ToString();
-                //fruit[1] = Counting();
 
-                break;
+	Color Colorset(Color col)
+	{
 
-        }*/
+		return score.color = col;
 
 	}
 }
