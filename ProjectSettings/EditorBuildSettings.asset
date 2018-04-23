@@ -11,9 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Name.unity
     guid: d771cd83ab467474786162136b8c5d33
-  - enabled: 0
-    path: Assets/Gender.unity
-    guid: eec9e05062c5cb643831959c12e93866
   - enabled: 1
     path: Assets/Table1.unity
     guid: ccf8befb1074fdc4aac3b4afa7a9ff51
+  - enabled: 1
+    path: Assets/Table2.unity
+    guid: ce54a06610dc2d74aadfc878c860c206
+  - enabled: 1
+    path: Assets/Table3.unity
+    guid: 9b136bcc8de60644d910dd238ed3fd4e
+  - enabled: 1
+    path: Assets/Table4.unity
+    guid: 7b9763426450ae34b83f8ca27b135d49
+  - enabled: 1
+    path: Assets/Table5.unity
+    guid: 31eb3303941fd3a45b0589c2db6fbeda
