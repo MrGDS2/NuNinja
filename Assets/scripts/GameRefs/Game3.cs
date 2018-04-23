@@ -34,6 +34,9 @@ public class Game3 : MonoBehaviour {
 		Counter.pAmount = 0;
 		Counter.instance.fScore.text = "0";
 		Counter.fAmount = 0;
+
+
+
 		Time.timeScale = 0;
 	
 	}
